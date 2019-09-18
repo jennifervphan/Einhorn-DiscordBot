@@ -13,11 +13,6 @@ module.exports = (client) => {
         if (message.content === "Who do we hate?") {
             message.channel.send("Niklas, of course!")
         }
-        if (message.content === "Niklas is here!") {
-            message.channel.send("I don't want Niklas!")
-        }
-        if (message.content === "We don't like you") {
-            message.channel.send("I don't like Niklas, but you do, Jenny!")
-        }
+
     });
 }
