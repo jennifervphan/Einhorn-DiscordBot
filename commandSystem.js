@@ -7,7 +7,7 @@ class CommandSystem {
     handleEvent(event) {
         if(event.author.bot) return;
         for(let command of this.playerCommandMap) {
-            if(event.content.toLowerCase().includes(command[0])) {
+            if(command[0].test(event.content)) {
                 if(command[1](event)) break;
             }
         }

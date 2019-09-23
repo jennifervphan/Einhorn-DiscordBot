@@ -7,7 +7,6 @@ function requireFolder(commandSystem, subFolder) {
       return;
     }
     if(file === 'index.js') return;
-    console.log(file)
     require("./" + (subFolder ? subFolder + "/" : "") + file)(commandSystem);
   });
 }
